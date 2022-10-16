@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <style>
+    /* バッドプラクティス */
+    #sidebar {
+      border: 1px solid #CCC;
+      width: 300px;
+      background-color: #FAFAFA;
+    }
+    #sidebar ul li {
+      border-bottom: 1px dashed #CCC;
+    }
+    #sidebar ul li a {
+      display: block;
+      padding: 0.5em 1em;
+      font-weight: bold;
+      color: #489;
+    }
+    #sidebar ul li a:hover {
+      background-color: #FFFFFF;
+    }
+    #sidebar .widget {
+      padding: 10px;
+    }
+    #sidebar .links li {
+      border-bottom: 0;
+    }
+    #sidebar .links li a {
+      padding: 0.5em;
+      background-color: #6AB;
+      font-weight: normal;
+      color: #FFF;
+    }
+    #sidebar .links li a:hover {
+      background-color: #7BC;
+    }
+
+    /* グッドプラクティス */
+    #sidebar {
+      border: 1px solid #CCC;
+      width: 300px;
+      background-color: #FAFAFA;
+    }
+    #sidebar > ul > li {
+      border-bottom: 1px dashed #CCC;
+    }
+    #sidebar > ul > li > a {
+      display: block;
+      padding: 0.5em 1em;
+      font-weight: bold;
+      color: #489;
+    }
+    #sidebar > ul > li > a:hover {
+      background-color: #FFFFFF;
+    }
+    .widget {
+      padding: 10px;
+    }
+    .links > li {
+      border-bottom: 0;
+    }
+    .links > li > a {
+      padding: 0.5em;
+      background-color: #6AB;
+      font-weight: normal;
+      color: #FFF;
+    }
+    .links > li > a:hover {
+      background-color: #7BC;
+    }
+</style>
+</head>
+
+<body>
+  <div id="sidebar">
+    <ul>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#menu">メニュー</a></li>
+    </ul>
+    <div class="widget">
+      <ul class="links">
+        <li><a href="#link">リンク</a></li>
+        <li><a href="#link">リンク</a></li>
+        <li><a href="#link">リンク</a></li>
+      </ul>
+    </div>
+    </div>
+
+</body>
+
+</html>
