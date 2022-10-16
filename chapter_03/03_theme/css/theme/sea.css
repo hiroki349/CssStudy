@@ -1,0 +1,7 @@
+body {
+  background: aqua;
+}
+.theme-sea #header,
+.theme-sea #sidebar {
+  border: 1px solid blue;
+}
