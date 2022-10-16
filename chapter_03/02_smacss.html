@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <style>
+    /* SMACSS */
+
+    /* Layout */
+    .l-grid {
+      overflow: hidden;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+
+    .l-grid-item {
+      float: left;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+
+    .tab {
+      display: inline-block;
+      border-radius: 6px 6px 0 0;
+      border: 1px solid #489;
+      padding: 0.5em;
+      background-color: #FFF;
+      color: #489;
+    }
+    .tab a {
+      color: inherit;
+      text-decoration: #489;
+    }
+
+    /* State */
+    .is-hidden {
+      display: none;
+    }
+
+    .is-error {
+      color: indianred;
+    }
+
+    .tab.is-active {
+      background-color: #489;
+      color: #FFF;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <ul>
+        <li class="tab"><a href="#tab-a">タブA</a></li>
+        <li class="tab is-active"><a href="#tab-b">タブB</a></li>
+      </ul>
+    </div>
+
+    <div class="l-grid">
+      <div class="l-grid-item"><img src="business.jpg"></div>
+      <div class="l-grid-item"><img src="sports.jpg"></div>
+      <div class="l-grid-item"><img src="city.jpg"></div>
+      <div class="l-grid-item"><img src="animal.jpg"></div>
+      <div class="l-grid-item"><img src="fashion.jpg"></div>
+      <div class="l-grid-item"><img src="nature.jpg"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

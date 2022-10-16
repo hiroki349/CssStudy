@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <style>
+    /* OOCSS */
+
+    /* 基本構造 */
+    .alert {
+      border: 2px solid #333;
+      border-radius: 6px;
+      margin: 10px;
+      padding: 10px;
+      background-color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* 成功 */
+    .success {
+      border-color: #494;
+      background-color: rgba(68, 153, 68, 0.3);
+    }
+
+    /* 警告 */
+    .warning {
+      border-color: #DD0;
+      background-color: rgba(221, 221, 0, 0.3);
+    }
+
+    /* エラー */
+    .error {
+      border-color: #C44;
+      background-color: rgba(204, 68, 68, 0.3);
+    }
+
+    /* インフォメーション */
+    .info {
+      border-color: #48C;
+      background-color: rgba(68, 136, 153, 0.3);
+    }
+
+    .container {
+      margin: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="alert success">成功のアラートメッセージ</div>
+    <div class="alert warning">警告のアラートメッセージ</div>
+    <div class="alert error">エラーのアラートメッセージ</div>
+    <div class="alert info">インフォメーションのメッセージ</div>
+  </div>
+</body>
+
+</html>
