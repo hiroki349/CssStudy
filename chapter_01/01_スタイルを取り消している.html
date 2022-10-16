@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <style>
+    .title {
+      border-bottom: 2px solid #000;
+      margin-bottom: 1em;
+      padding: 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .no-border {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .title2 {
+      margin-bottom: 0.5em;
+      font-size: 2em;
+    }
+
+    .headline {
+      padding-bottom: 10px;
+      border-bottom: 2px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1 title>スタイルを取り消している（悪い例）</h1>
+    <h2 class="title">見出し</h2>
+    <h2 class="title no-border">見出し</h2>
+  </div>
+
+  <div>
+    <h1 title>スタイルを取り消している（いい例）</h1>
+    <h2 class="title2">見出し</h2>
+    <h2 class="title2 headline">見出し</h2>
+    <p>両者を見比べれば、単純にコード量が減っていることがわかります。</p>
+    <p>これは単純な例ですが、より複雑なデザインやコードにおいては、無駄なコードが増えてしまう要因になり得ます。</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <style>
+    .bad-introduction {
+      line-height: 27px;
+      font-size: 18px;
+    }
+
+    .bad-lead {
+      margin-bottom: 0.5em;
+      text-align: center;
+      line-height: 54px;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .good-introduction {
+      /* line-heightを相対値にすることで、フォントサイズが仮に変わっても、同じ倍率を保つ */
+      /* line-heightは値を子要素に継承するため、子要素に同じline-heightを指定する必要がない */
+      /* line-heightプロパティを単位のない値にすることで、その要素のフォントサイズに対する倍率で行送りが計算される */
+      line-height: 1.5;
+      font-size: 18px;
+    }
+
+    .good-lead {
+      margin-bottom: 0.5em;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>バッドプラクティス</h2>
+  <div class="bad-introduction">
+    <p class="bad-lead">CSSの設計はとてもむずかしい。</p>
+    <p>CSSは他の言語よりも非力で、強固な設計を前提にしてコードを書くことはむずかしい。</p>
+  </div>
+
+  <h2>グッドプラクティス</h2>
+  <div class="good-introduction">
+    <p class="good-lead">CSSの設計はとてもむずかしい。</p>
+    <p>CSSは他の言語よりも非力で、強固な設計を前提にしてコードを書くことはむずかしい。</p>
+  </div>
+</body>
+
+</html>
